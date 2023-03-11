@@ -16,7 +16,6 @@
     environment = {
         variables = {
           NIXPKGS_ALLOW_UNFREE = "1";
-          EDITOR = "nvim";
         };
         systemPackages = with pkgs; [
           neovim
