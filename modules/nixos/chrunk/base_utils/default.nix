@@ -1,4 +1,4 @@
-{ lib, pkgs, flake, replugged-nix-flake, config, ... }:
+{ lib, pkgs, config, inputs, ... }:
 {
   options.chrunk.base_utils = {
     enable = lib.mkEnableOption "Enable Base utils";
@@ -34,7 +34,6 @@
           wget
           httpie
           btop
-          snowfallorg.flake
         ];
     };
   };

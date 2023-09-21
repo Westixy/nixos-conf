@@ -14,7 +14,7 @@
       promptInit = ''
         starship init fish | source
         function fish_greeting
-          ${pkgs.joky-motd}/bin/joky-motd
+          ${pkgs.internal.joky-motd}/bin/joky-motd
         end
       '';
       shellAliases = {
@@ -36,9 +36,9 @@
       xclip
       exa
       jq
-      joky-motd
       lolcat
       boxes
+      internal.joky-motd
     ];
   };
 }
