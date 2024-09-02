@@ -18,11 +18,11 @@
     environment.sessionVariables = {
       STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/sote/.steam/root/compatibilitytools.d";
     };
-    service.xserver.videoDrivers = ["nvidia"];
+    services.xserver.videoDrivers = ["nvidia"];
     hardware.nvidia = {
       modesetting.enable = true;
       prime = {
-        sync.enable = true;
+        sync.enable = false;
         nvidiaBusId = "PCI:1:0:0";
       };
     };

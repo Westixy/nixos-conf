@@ -9,6 +9,7 @@ rec {
       url = "github:snowfallorg/lib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    #nixos-cli.url = "github:water-sucks/nixos";
   };
 
   outputs = inputs:
@@ -16,6 +17,7 @@ rec {
       inherit inputs;
       src = ./.;
 
+      channels-config.allowUnfree = true;
       nixosConfiguration.default = outputs.nixosConfiguration.sotenix;
     };
 }

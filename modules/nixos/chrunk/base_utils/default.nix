@@ -12,6 +12,7 @@
       settings.experimental-features = [ "nix-command" "flakes" ];
     };
 
+
     fonts.fonts = with pkgs; [
       fantasque-sans-mono
       jetbrains-mono
