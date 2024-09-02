@@ -5,7 +5,13 @@
   };
 
   config = lib.mkIf config.chrunk.base_utils.enable {
-    nix.settings.experimental-features = [ "nix-command" "flakes" ];
+    nix = {
+      registry = {
+        unstable.flake = inputs.unstable;
+      };
+      settings.experimental-features = [ "nix-command" "flakes" ];
+    };
+
     fonts.fonts = with pkgs; [
       fantasque-sans-mono
       jetbrains-mono

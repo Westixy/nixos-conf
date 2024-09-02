@@ -15,6 +15,7 @@
   };
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  boot.supportedFilesystems = [ "ntfs" ];
 
   # networking.hostName = "sotenix";
   networking.networkmanager.enable = true;
@@ -54,6 +55,7 @@
     base_utils.enable = true;
     fish.enable = true;
     neovim.enable = true;
+    games.enable = true;
   };
 
   system.stateVersion = "23.05";
