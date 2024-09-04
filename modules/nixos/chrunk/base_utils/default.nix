@@ -13,7 +13,7 @@
     };
 
 
-    fonts.fonts = with pkgs; [
+    fonts.packages = with pkgs; [
       fantasque-sans-mono
       jetbrains-mono
       fira-mono

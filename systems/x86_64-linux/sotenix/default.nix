@@ -26,9 +26,9 @@
 
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Enable sound with pipewire.
@@ -54,5 +54,5 @@
     games.enable = true;
   };
 
-  system.stateVersion = "23.05";
+  system.stateVersion = "24.05";
 }

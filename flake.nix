@@ -2,7 +2,7 @@ rec {
   description = "Chrunk; Westixy's NIX conf";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     snowfall-lib = {

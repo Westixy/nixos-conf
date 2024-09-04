@@ -34,7 +34,7 @@
     environment.systemPackages = with pkgs; [
       sqlite
       xclip
-      exa
+      eza
       jq
       lolcat
       boxes
